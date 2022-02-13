@@ -5,7 +5,7 @@ pipeline{
       when{
         branch = 'master'
       }
-      step{
+      steps{
         echo 'Deploying master branch code'
       }
     }
