@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('Master'){
       when{
-        branch = 'master'
+        branch 'master'
       }
       steps{
         echo 'Deploying master branch code'
@@ -11,7 +11,7 @@ pipeline{
     }
     stage('Dev'){
       when{
-        branch = 'dev'
+        branch 'dev'
       }
       steps{
         echo 'Deploying dev branch code'
