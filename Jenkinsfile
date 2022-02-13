@@ -13,7 +13,7 @@ pipeline{
       when{
         branch = 'dev'
       }
-      step{
+      steps{
         echo 'Deploying dev branch code'
       }
     }
